@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login/Signup</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #333;
+			background: url(login.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		.main-container{
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.main-container .content{
+			height: 90%;
+			width: 80%;
+			background: #fff;
+			border-radius: 40px;
+			display: flex;
+			align-items: center;
+		}
+		.main-container .content .image{
+			height: calc(100% - 20px);
+			width: calc(50% - 10px);
+			background: #ff1;
+			margin-left: 10px;
+			border-radius: 30px;
+			overflow: hidden;
+		}
+		.main-container .content .image img{
+			height: 100%;
+			width: auto;
+		}
+		.main-container .content .login-page{
+			height: calc(100% - 20px);
+			width: calc(50% - 20px);
+			margin-left: 10px;
+			border-radius: 30px;
+		}
+		.main-container .content .login-page form{
+			display: flex;
+			flex-direction: column;
+			align-items: center;		
+		}
+		.main-container .content .login-page form .logo{
+			position: absolute;
+			margin-top: 20px;
+		}
+		.main-container .content .login-page form img{
+			height: 100%;
+			width: 100px;
+		}
+		.main-container .content .login-page form .welcome{
+			font-size: 50px;
+			font-weight: 600;
+			margin-top: 150px;
+		}
+		.main-container .content .login-page form label{
+			font-size: 16px;
+			height: 30px;
+			width: 300px;
+			display: flex;
+			align-items: center;
+			margin: 20px 0px 5px 0px;
+		}
+		.main-container .content .login-page form input{
+			height: 30px;
+			width: 300px;
+			border-radius: 5px;
+			background: #e5e5e5;
+			border: none;
+			padding-left: 10px;
+			font-size: 15px;
+		}
+		.main-container .content .login-page form input[type='checkbox']{
+			height: 15px;
+			width: 15px;
+			margin-top: 20px;
+			margin-left: -280px;
+		}
+		.main-container .content .login-page form .checkbox{
+			margin-top: -23px;
+			margin-left: 45px;
+			font-size: 14px;
+		}
+		.main-container .content .login-page form .frgt-pass{
+			margin-top: -30px;
+			margin-left: 400px;
+			font-size: 14px;
+			cursor: pointer;
+			text-decoration: none;
+			color: #000;
+		}
+		.main-container .content .login-page form button{
+			height: 35px;
+			width: 300px;
+			border-radius: 10px;
+			border: none;
+			font-size: 16px;
+			margin-top: 15px;
+			background: #333;
+			color: #fff;
+			cursor: pointer;
+		}
+		.main-container .content .login-page form .signup{
+			margin-top: 80px;
+		}
+		.main-container .content .login-page form .signup a{
+			text-decoration: none;
+			color: #000;
+		}
+ 	</style>
+</head>
+<body>
+<div class="main-container">
+	<div class="content">
+	<div class="image">
+		<img src="login.jpg">
+	</div>
+	<div class="login-page">
+		<form>
+			<div class="logo">
+			<img src="logo.png"></div>
+			<span class="welcome">Welcome Back</span>
+			<label>Email</label>
+			<input type="Email" name="Email" placeholder="Enter Email">
+			<label>Password</label>
+			<input type="Password" name="Password" placeholder="Password">
+			<input type="checkbox" name="checkbox"><label class="checkbox">Remember me</label>
+			<a href="#">
+			<label class="frgt-pass">Forget Password</label></a>
+			<button>Sign in</button>
+			<button>Sign in with Google</button>
+			<span class="signup">Don't have an account? <a href="#">Sign Up</a></span>
+		</form> 
+	</div>
+</div>
+</div>
+</body>
+</html>
